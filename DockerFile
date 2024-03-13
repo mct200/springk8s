@@ -1,0 +1,5 @@
+FROM openjdk:17
+VOLUME /tmp
+ADD /target/restful1-1.0.jar  restful1-1.0.jar
+ENTRYPOINT ["java","-jar","-jar","/restful1-1.0.jar"]
+USER mtc22
